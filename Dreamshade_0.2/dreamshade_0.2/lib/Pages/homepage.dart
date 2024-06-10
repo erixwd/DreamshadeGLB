@@ -49,7 +49,7 @@ class _HomepageState extends State<Homepage> {
             child: Stack(
               children: [
                 Container(
-                  color: Colors.transparent,
+                  color: const Color.fromARGB(255, 255, 255, 255),
                 ),
                 Center(
                   child: Stack(
@@ -71,7 +71,7 @@ class _HomepageState extends State<Homepage> {
                               gradientControl: 0.7,
                               gradientStartColor: Color.fromARGB(255, 244, 162, 54),
                               gradientEndColor: Color.fromARGB(255, 175, 219, 255),
-                              blurSigma: 4.0, // Add blur effect
+                              blurSigma: 2.0, // Add blur effect
                             ),
                           ),
                         ),
@@ -82,25 +82,7 @@ class _HomepageState extends State<Homepage> {
                         bottom: 0,
                         child: Container(
                           width: 2,
-                          color: Colors.grey.withOpacity(0.1),
-                        ),
-                      ),
-                      Positioned(
-                        left: containerWidth / 3,
-                        top: 0,
-                        bottom: 0,
-                        child: Container(
-                          width: 2,
-                          color: Colors.red.withOpacity(0.5),
-                        ),
-                      ),
-                      Positioned(
-                        left: 2 * containerWidth / 3,
-                        top: 0,
-                        bottom: 0,
-                        child: Container(
-                          width: 2,
-                          color: Colors.red.withOpacity(0.5),
+                          color: Colors.grey.withOpacity(0.17),
                         ),
                       ),
                     ],
